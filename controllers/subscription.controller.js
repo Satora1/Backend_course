@@ -5,7 +5,7 @@ import { SERVER_URL } from "../config/env.js";
 export const createSubscription = async (req, res, next) => {
     try {
         if (!workflowClient) {
-            throw new Error("workflowClient is not defined");
+            throw new Error("workflowClient is not defined ");
         }
 
         const subscription = await Subscription.create({
